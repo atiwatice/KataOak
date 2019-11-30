@@ -1,0 +1,135 @@
+<!-- บทเรียนเสริม อ่าน Best Practice 
+    การใช้ Form https://code.tutsplus.com/tutorials/20-html-forms-best-practices-for-beginners--net-6593 -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- Use fieldsets to encapsulate similar fields -->
+    <p>Use fieldsets to encapsulate similar fields</p>
+    <fieldset>
+      <span>Billing Address</span><input type="text" /> <span>City</span
+      ><input type="text" /> <span>Province</span><input type="text" />
+      <span>Postal Code</span><input type="text" />
+    </fieldset>
+    <br />
+
+    <fieldset>
+      <span>Shipping Address</span><input type="text" /> <span>City</span
+      ><input type="text" /> <span>Province</span><input type="text" />
+      <span>Postal Code</span><input type="text" />
+    </fieldset>
+    <!-- Label Fieldsets with Legends -->
+    <p>Label Fieldsets with Legends</p>
+    <fieldset>
+      <legend>Billing Address</legend>
+      <span>Address</span><input type="text" /> <span>City</span
+      ><input type="text" /> <span>Province</span><input type="text" />
+      <span>Postal Code</span><input type="text" />
+    </fieldset>
+
+    <!-- Name your Inputs -->
+    <p>Name your Inputs</p>
+    <fieldset>
+      <span>Billing Address</span><input type="text" name="billAddress" />
+      <span>City</span><input type="text" name="billCity" />
+      <span>Province</span><input type="text" name="billProvince" />
+      <span>Postal Code</span><input type="text" name="billPC" />
+    </fieldset>
+
+    <!-- Use the Label Element -->
+    <p>Use the Label Element</p>
+    <fieldset>
+      <legend>Billing Affress</legend>
+      <label>Address</label><input type="text" name="billAddress" />
+      <label>City</label><input type="text" name="billCity" />
+      <label>Province</label><input type="text" name="billProvince" />
+      <label>Postal Code</label><input type="text" name="billPC" />
+    </fieldset>
+
+    <!-- Give Labels the For Attribute -->
+    <p>Give Labels the For Attribute</p>
+    <fieldset>
+      <legend>Billing Affress</legend>
+      <label for="billAddress">Address</label
+      ><input type="text" id="billAddress" name="billAddress" />
+      <label for="billCity">City</label
+      ><input type="text" id="billCity" name="billCity" />
+      <label for="billProvince">Province</label
+      ><input type="text" id="billProvince" name="billProvince" />
+      <label for="billPC">Postal Code</label
+      ><input type="text" id="billPC" name="billPC" />
+    </fieldset>
+
+    <!-- Use optgroup to categorize options -->
+    <p>Use optgroup to categorize options</p>
+    <select>
+      <optgroup label="USA">
+        <option>Alabama</option>
+        <option>Alaska</option>
+        <option>Arizona</option>
+      </optgroup>
+      <optgroup label="Canada">
+        <option>Alberta</option>
+        <option>British Columbia</option>
+        <option>Manitoba</option>
+      </optgroup>
+    </select>
+
+    <!-- Always assign complete attributes -->
+    <p>Always assign complete attributes</p>
+    <label for="live">Living?</label>
+    <input name="live" id="live" type="checkbox" checked disabled /><br />
+    <label for="live">Living?</label>
+    <input
+      name="live"
+      id="live"
+      type="checkbox"
+      checked="checked"
+      disabled="disabled"
+    />
+
+    <!-- Consider using Buttons instead of Submit Inputs -->
+    <p>Consider using Buttons instead of Submit Inputs</p>
+    <input type="submit" />
+
+    <!-- Put tabindices on your inputs -->
+    <p>Put tabindices on your inputs</p>
+    <input type="text" tabindex="2" />
+    <input type="text" tabindex="1" />
+    <input type="text" tabindex="3" />
+
+    <!-- Define accesskey when appropriate -->
+    <p>Define accesskey when appropriate</p>
+    <label for="search"><span class="shortcut">S</span>earch</label>
+    <input type="text" name="s" id="search" accesskey="s" />
+
+    <!-- Use good focusing techniques -->
+    <style>
+      input[type="text"]:hover {
+        background-color: #ffff66;
+        border-color: #999999;
+      }
+    </style>
+
+    <!-- Use the right Content Type -->
+    <p>Use the right Content Type</p>
+    <form action="verify.php" method="get" enctype="multipart/form-data">
+        label for="avatar">Upload your Avatar : </label>
+        <input type="file" name="avatar" id="avatar" />
+    </form>
+
+    <!-- Know when to use Get and when to use Post -->
+    <p>Know when to use Get and when to use Post</p>
+    <form action="you.php" method="get">
+            label for="fname">First Name</label>
+            <input type="text" name="fname" id="fname" value="Bill" />
+            label for="lname">Last Name</label>
+            <input type="text" name="lname" id="lname" value="Gates" />
+        </form>
+  </body>
+</html>

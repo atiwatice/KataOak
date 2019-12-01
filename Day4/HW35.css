@@ -1,0 +1,64 @@
+h1 {
+  color: rgb(110, 6, 32) !important;
+}
+h1 {
+  color: green;
+}
+
+div h1 {
+  color: rgb(81, 255, 0);
+}
+#first {
+  background: lightblue;
+}
+.second {
+  background: indianred;
+}
+@import url("https://fonts.googleapis.com/css?family=Indie+Flower");
+body {
+  background: #dcebfc;
+  font-family: "Indie Flower", cursive;
+}
+.container {
+  background: #fff;
+  padding: 1.5rem;
+}
+h1,
+h2,
+h3 {
+  color: #4f85d7;
+}
+@import url("https://fonts.googleapis.com/css?family=Dancing+Script|Indie+Flower");
+body {
+  background: #dcebfc;
+  font-family: "Indie Flower", cursive;
+}
+.container {
+  background: #fff;
+  padding: 1.5rem;
+}
+h1,
+h2,
+h3 {
+  color: #4f85d7;
+}
+.footer {
+  font-family: "Dancing Script", cursive;
+}
+.front-icon {
+  display: block;
+}
+
+.front-icon i {
+  font-size: 10rem;
+}
+.front-icon {
+  display: block;
+  color: #ffffff;
+  padding: 3rem;
+  background: #4f85d7;
+}
+
+.front-icon i {
+  font-size: 10rem;
+}
